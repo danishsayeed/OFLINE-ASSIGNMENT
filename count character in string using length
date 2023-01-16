@@ -1,0 +1,15 @@
+//C++ Program to count the total number of characters in a string
+#include<iostream>
+using namespace std;
+int main(){
+string str;
+int count=0;
+cout<<"Enter the string : ";
+getline(cin,str);
+// for(int i=0;str[i] != '\0';i++){
+//     count++;
+// }
+count=str.length();
+cout<<"Total  character in : "<<str<<" is : "<<count;
+return 0;
+}
