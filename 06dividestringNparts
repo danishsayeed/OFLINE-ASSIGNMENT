@@ -1,0 +1,25 @@
+//C++ Program to divide a string in 'N' equal parts
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    int no,n;
+    string str1;
+    cout<<"Enter the string : ";
+    getline(cin,str1);
+    cout<<"Enter the no of parts : ";
+    cin>>no;
+    if(str1.length()%n!=0)  
+    n=str1.length()/no+1;
+    else
+    n=str1.length()/no;
+
+    for(int i=0;str1[i]!='\0';i++){
+        
+        cout<<str1[i];
+        if((i+1)%n==0)
+        cout<<"  ";
+        
+    }
+return 0;
+}
